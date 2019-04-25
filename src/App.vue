@@ -11,6 +11,7 @@
 
 <style>
   @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+  @import 'assets/css/flexboxgrid.css';
   #app {
     /* font-family: "Avenir", Helvetica, Arial, sans-serif; */
     font-family: 'Libre Baskerville', serif;

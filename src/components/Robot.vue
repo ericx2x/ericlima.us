@@ -8,23 +8,23 @@
                 <div class="eye"></div>
             </div>
         </div>
-        <div class="leftarm">
-            <div class="finger"></div>
-            <div class="finger"></div>
+        <!-- <div class="forearm">
+            <div class="fist"></div>
         </div>
         <div class="rightarm">
             <div class="finger"></div>
             <div class="finger"></div>
-        </div>
+        </div> -->
         <div class="neck"></div>
         <div class="body"></div>
-        <div class="legs">
+        <div class="ear">
             <div class="left">
-                <div class="foot"></div>
             </div>
             <div class="right">
-                <div class="foot"></div>
             </div>
+        </div>
+        <div class="tail">
+          <div class="heart"></div>
         </div>
     </div>
 </template>
@@ -33,21 +33,85 @@
 $white: #fff;
 $pink: #F14189;
 $blue: #1B98E0;
-$lightGray: #bdc3c7;
+$darkBlue: #1e3446;
+$lightGray: #CED1E4;
 $darkGray: #444;
 $black: #000;
-
-body{
-  background-color: $white;
-  color: $darkGray;
   .bot{
     position: relative;
+    margin: 0 auto;
     height: 30px;
+    top: 20px;
+    text-align: center;
     width: 50px;
     border-radius: 25px;
     background-color: $lightGray;
-    animation: 5s botMotion linear forwards;
+    animation: 4s Dance linear infinite;
     margin-bottom: 50px;
+       .tail {
+        position: relative;
+        width: 212px;
+        height: 100px;
+        box-sizing: content-box;
+      }
+      .tail:before,
+      .tail:after {
+      //   content: "";
+      //   box-sizing: content-box;
+      //   position: absolute;
+      //   top: 0;
+        
+      //   width: 60px;
+      //   height: 60px;
+      //   border: 20px solid red;
+      //   border-radius: 50px 50px 0 50px;
+      //   transform: rotate(-45deg);
+        content: "";
+        position: absolute;
+        top: 30px;
+        left: 34px;
+        height: 25px;
+        width: 25px;
+        border: 4px solid $lightGray;
+        border-top: 0px;
+        border-radius: 0px 0px 85px 85px;
+        transform: rotate(-23deg);
+      }
+      .tail:after {
+        height: 15px;
+        width: 15px;
+        margin-top: -22px;
+        margin-left: 18.5px;
+        transform: rotate(154deg);
+      }
+
+    .heart {
+      position: relative;
+      width: 10px;
+      height: 9px;
+      left: 72px;
+      top: 20px;
+    }
+    .heart:before,
+    .heart:after {
+      position: absolute;
+      content: "";
+      left: 5px;
+      top: 0;
+      width: 5px;
+      height: 8px;
+      background: $blue;
+      border-radius: 5px 5px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+      z-index: 1;
+    }
+    .heart:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+  
     .eyes{
       position: absolute;
       width: 40px;
@@ -76,38 +140,14 @@ body{
         margin-top: -5px;
       }
     }
-    .finger{
-      position: absolute;
-      height: 10px;
-      width: 5px;
-      top: 40px;
-      background-color: $lightGray;
-    }
-    .leftarm{
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 30px;
-      width: 25px;
-      .finger:nth-of-type(1){
-        animation: 5s lefttopfinger linear forwards;
-      }
-      .finger:nth-of-type(2){
-        animation: 5s leftbotfinger linear forwards;
-      }
-    }
     .rightarm{
       position: absolute;
-      top: 0;
-      right: 0;
-      height: 30px;
-      width: 25px;
-      .finger:nth-of-type(1){
-        animation: 5s righttopfinger linear forwards;
-      }
-      .finger:nth-of-type(2){
-        animation: 5s rightbotfinger linear forwards;
-      }
+      top: 46px;
+      left: 45px;
+      background: lightGray;
+      height: 9px;
+      width: 24px;
+      border-radius: 1px;
     }
   .neck{
     position: absolute;
@@ -115,228 +155,148 @@ body{
     left: 10px;
     width: 20px;
     height: 10px;
-    background-color: $lightGray;
+    z-index: 1;
+    background-color: $blue;
     margin-left: 5px;
     animation: 5s neckMotion linear forwards;
   }
-//   #body{
-//     position: absolute;
-//     top: 33px;
-//     width: 50px;
-//     height: 10px;
-//     background-color: $lightGray;
-//     animation: 5s bodyMotion linear forwards;
-//   }
-  .legs{
+  .body{
     position: absolute;
-    top: 63px;
-    left: 25px;
-    .foot{
-      width: 25px;
-      height: 10px;
-      background-color: $lightGray;
-    }
+    border-radius: 25px;
+    top: 40px;
+    width: 50px;
+    height: 25px;
+    background-color: $lightGray;
+    animation: 5s bodyMotion linear forwards;
+  }
+  .ear{
     .left{
-      position: absolute;
-      top: -10px;
-      left: 0;
-      animation: 5s leftfoot linear forwards;
+        position: absolute;
+        top: -13px;
+        // background: $lightGray;
+        left: 32px;
+        height: 15px;
+        width: 15px;
+        // border-radius: 25px;
+        transform: rotate(15deg);
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 16px solid $lightGray;
     }
     .right{
-      position: absolute;
-      top: -10px;
-      right: 0;
-      animation: 5s rightfoot linear forwards;
+        position: absolute;
+        top: -13px;
+        // background: $lightGray;
+        left: 2px;
+        height: 15px;
+        width: 15px;
+        transform: rotate(-15deg);
+        // border-radius: 25px;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 16px solid $lightGray;
+    }
+  }
+  .forearm{
+    position: absolute;
+    top: 20px;
+    left: 65px;
+    background: $lightGray;
+    height: 35px;
+    border-radius: 15px;
+    width: 10px;
+    animation: 3s foreArm linear infinite;
+    .fist{
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        background: $lightGray;
+        // position: absolute;
+        margin-left: -5px;
+        margin-top: -10px;
     }
   }
 }
-  
-// @keyframes lefttopfinger{
-//   0%
-//     left 0
-//     top 5px
-//   10%, 20%
-//     left -10px
-//     top 5px
-//   30%
-//     left -10px
-//     top 2px
-//   40%
-//     left -10px
-//     top 5px
-//   50%
-//     left -10px
-//     top 2px
-//   60%
-//     left -10px
-//     top 5px
-//   70%
-//     left -10px
-//     top 2px
-//   80%, 90%
-//     left -10px
-//     top 5px
-//   100%
-//     left 0
-//     top 5px
-// }
 
-// @keyframes leftbotfinger{
-//   0%
-//     left 0
-//     bottom 5px
-//   10%, 20%
-//     left -10px
-//     bottom 5px
-//   30%
-//     left -10px
-//     bottom 2px
-//   40%
-//     left -10px
-//     bottom 5px
-//   50%
-//     left -10px
-//     bottom 2px
-//   60%
-//     left -10px
-//     bottom 5px
-//   70%
-//     left -10px
-//     bottom 2px
-//   80%, 90%
-//     left -10px
-//     bottom 5px
-//   100%
-//     left 0
-//     bottom 5px
-// }
+@keyframes Dance{
+  0%{
+    left: 0;
+  }
+  10%{
+    left: 62px;
+  }
+  20%{
+    left: -62px;
+  }
+  30%{
+    left: 62px;
+  }
+  40%{
+    left: 0;
+  }
+  100%{
+    left: 0;
+  }
+}
 
-// @keyframes righttopfinger{
-//   0%
-//     right 0
-//     top 5px
-//   10%, 20%
-//     right -10px
-//     top 5px
-//   30%
-//     right -10px
-//     top 2px
-//   40%
-//     right -10px
-//     top 5px
-//   50%
-//     right -10px
-//     top 2px
-//   60%
-//     right -10px
-//     top 5px
-//   70%
-//     right -10px
-//     top 2px
-//   80%, 90%
-//     right -10px
-//     top 5px
-//   100%
-//     right 0
-//     top 5px
-// }
-
-// @keyframes rightbotfinger{
-//   0%
-//     right 0
-//     bottom 5px
-//   10%, 20%
-//     right -10px
-//     bottom 5px
-//   30%
-//     right -10px
-//     bottom 2px
-//   40%
-//     right -10px
-//     bottom 5px
-//   50%
-//     right -10px
-//     bottom 2px
-//   60%
-//     right -10px
-//     bottom 5px
-//   70%
-//     right -10px
-//     bottom 2px
-//   80%, 90%
-//     right -10px
-//     bottom 5px
-//   100%
-//     right 0
-//     bottom 5px
-// }
-  
-// @keyframes leftfoot{
-//   0%
-//     top 0
-//   10%, 20%
-//     top 0
-//   30%
-//     top 12px
-//   40%
-//     top 0
-//   50%
-//     top 12px
-//   60%
-//     top 0
-//   70%
-//     top 12px
-//   80%, 90%, 100%
-//     top 0
-// }
-
-// @keyframes rightfoot{
-//   0%
-//     top 0
-//   10%, 20%, 30%
-//     top 0
-//   40%
-//     top 12px
-//   50%
-//     top 0
-//   60%
-//     top 12px
-//   70%, 80%, 90%, 100%
-//     top 0
-// }
-
-// @keyframes botMotion{
-//   0%,10%
-//     top 0
-//   20%, 80%
-//     top -13px
-//   90%, 100%
-//     top 0
-// }
-
-// @keyframes neckMotion{
-//   0%,10%{
-//     top: 30px;
-//   }
-//   20%, 80%{
-//     top: 17px;
-//   }
-//   90%, 100%{
-//     top: 30px;
-//   }
-// }
-
-// @keyframes bodyMotion{
-//   0%,10%{
-//     top: 33px;
-//   }
-//   20%, 80%{
-//     top: 20px;
-//   }
-//   90%, 100%{
-//     top: 33px;
-//   }
-// }
+@keyframes foreArm{
+  0%{
+    transform: rotate(10deg);
+    left: 65px;
+  }
+  45%{
+    transform: rotate(0deg);
+    left: 63px;
+  }
+  50%{
+    transform: rotate(10deg);
+    left: 65px;
+  }
+  55%{
+    transform: rotate(0deg);
+    left: 63px;
+  }
+  60%{
+    transform: rotate(-10deg);
+    left: 60px;
+  }
+  65%{
+    transform: rotate(0deg);
+    left: 63px;
+  }
+  70%{
+    transform: rotate(10deg);
+    left: 65px;
+  }
+  75%{
+    transform: rotate(0deg);
+    left: 63px;
+  }
+  80%{
+    transform: rotate(10deg);
+    left: 65px;
+  }
+  85%{
+    transform: rotate(0deg);
+    left: 63px;
+  }
+  90%{
+    transform: rotate(-10deg);
+    left: 60px;
+  }
+  95%{
+    transform: rotate(0deg);
+    left: 63px;
+  }
+  100%{
+    transform: rotate(10deg);
+    left: 65px;
+  }
+}
 
 @keyframes eyeBlink{
   0%, 10%{
@@ -354,6 +314,5 @@ body{
   90%, 100%{
     background-color: $blue;
   }
-}
 }
 </style>
