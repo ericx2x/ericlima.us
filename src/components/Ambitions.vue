@@ -44,18 +44,21 @@
         </div>
       </div>
     </div>
+    <BigCircle />
   </section>
 </template>
 
 <script>
     import ScrollDown from "@/components/ScrollDown.vue";
     import NumberContainer from "@/components/NumberContainer.vue";
+    import BigCircle from "@/components/BigCircle.vue";
 
     export default {
         name: "home",
         components: {
             ScrollDown,
             NumberContainer,
+            BigCircle,
         }
     };
 </script>

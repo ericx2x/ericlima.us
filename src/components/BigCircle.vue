@@ -6,7 +6,9 @@
             <figure class=""></figure>
             <div class=""></div>
           </a>
-          <p class=""><a href="http://www.linkedin.com/profile/view?id=44720940&amp;trk=tab_pro">Add me  <br class="br1">on <br>Linkedin</a></p>
+          <p class="">
+              <a href="http://www.linkedin.com/profile/view?id=44720940&amp;trk=tab_pro">Add me  <br class="br1">on <br>Linkedin</a>
+          </p>
           <div class="horizontalLine"></div>
           <p class="">Thanks for viewing my website.</p>
           <a class="" target="_blank" href="/resume">Click here to view my resume.</a>
