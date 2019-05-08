@@ -72,7 +72,7 @@ export default {
   data() {
     return {
       resume:
-        "https://docs.google.com/document/d/1uB6d2i2eycBKmjvY6cU8HXj7DhpMHLqGn8sApkyTX2A/edit?usp=sharing",
+        "https://docs.google.com/document/d/1uB6d2i2eycBKmjvY6cU8HXj7DhpMHLqGn8sApkyTX2A/edit?usp=sharing"
     };
   },
   mounted() {
@@ -135,11 +135,12 @@ export default {
         // console.log(botScrollLine);
         // console.log("scrollLine");
         // console.log(scrollLine);
-        trans.forEach((e,indx)=>{
+        trans.forEach(e => {
+          /*, indx*/
           // setTimeout(function(){
-            if(e.offsetTop < botScrollLine){
-              e.classList.add("ericFadeInTrans");  
-            }
+          if (e.offsetTop < botScrollLine) {
+            e.classList.add("ericFadeInTrans");
+          }
           // },50*indx);
         });
         if (scrollLine > 0 && scrollLine < s1Height) {
