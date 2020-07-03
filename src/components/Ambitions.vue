@@ -156,6 +156,7 @@ export default {
         &:nth-of-type(3) {
           margin-left: 0;
           margin-top: 0px;
+          height: 100%;
         }
       }
     }
