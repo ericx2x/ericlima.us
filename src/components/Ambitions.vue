@@ -21,8 +21,10 @@
               <h3 class="montserratBold u-space-top">Leetcode<br /></h3>
               <div class="horizLine"></div>
               <p class="u-space-top">
-                Trying to use my spare time to tackle some leetcode problems.
-                Always feel the need to brush up my skillset.
+                I utilize platforms such as LeetCode to enhance my programming
+                skills. By tackling a variety of challenges, I not only refine
+                my technical abilities but also equip myself for real-world
+                problem-solving scenarios.
               </p>
             </div>
             <div class="dashedLine"></div>
@@ -34,8 +36,9 @@
               <h3 class="montserratBold u-space-top">Gaming<br /></h3>
               <div class="horizLine"></div>
               <p class="u-space-top">
-                I love competition. If you ever challenge me to a convinent game
-                of anything I will be sure to accept.
+                I thrive in competitive environments and embrace challenges.
+                Whether it's a strategic game or a coding competition, I’m
+                always ready to rise to the occasion.
               </p>
             </div>
           </div>
@@ -48,8 +51,7 @@
               <h3 class="montserratBold u-space-top">Design<br /></h3>
               <div class="horizLine"></div>
               <p class="u-space-top">
-                I love making code come to life. There's always a new technique
-                learn to do something different.
+              I am passionate about bringing code to life, continually exploring new techniques to innovate and create unique solutions.
               </p>
             </div>
           </div>
@@ -62,9 +64,7 @@
               <h3 class="montserratBold u-space-top">Books<br /></h3>
               <div class="horizLine"></div>
               <p class="u-space-top">
-                I'm aiming to read 1000 books in the next 10 years. Hopefully I
-                undercut that by quite a bit. I never want to stop learning. I
-                believe in the Red Queen's race.
+              My goal is to immerse myself in reading a diverse range of books over the next decade. I believe in the importance of lifelong learning and seek to cultivate my knowledge and perspective through literature. Reading not only enriches my mind but also fuels my passion for continuous growth.
               </p>
             </div>
           </div>
@@ -76,20 +76,20 @@
 </template>
 
 <script>
-import ScrollDown from "@/components/ScrollDown.vue";
-import NumberContainer from "@/components/NumberContainer.vue";
-import BigCircle from "@/components/BigCircle.vue";
+import ScrollDown from '@/components/ScrollDown.vue';
+import NumberContainer from '@/components/NumberContainer.vue';
+import BigCircle from '@/components/BigCircle.vue';
 
 export default {
-  name: "home",
+  name: 'home',
   components: {
     ScrollDown,
     NumberContainer,
-    BigCircle
+    BigCircle,
   },
   props: {
-    resume: String
-  }
+    resume: String,
+  },
 };
 </script>
 

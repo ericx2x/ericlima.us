@@ -15,11 +15,12 @@
           >
             <div class="overlayImg"></div>
             <div class="paragraphContent">
-              <h3 class="montserratBold u-space-top">Ruby<br /></h3>
+              <h3 class="montserratBold u-space-top">Typescript<br /></h3>
               <div class="horizLine"></div>
               <p class="u-space-top">
-                I've always been a fan of ruby and its clean and simple syntax.
-                I enjoy projects where I get to use it.
+                I have always been an admirer of TypeScript, an advanced version
+                of JavaScript that introduces static typing for improved code
+                quality and maintainability. But I also know many other languages like RoR, C-styled, or Python.
               </p>
             </div>
           </div>
@@ -31,8 +32,8 @@
               <h3 class="montserratBold u-space-top">React<br /></h3>
               <div class="horizLine"></div>
               <p class="u-space-top">
-                React is all over the web. It can change data, without reloading
-                the page.
+                React is ubiquitous on the web, allowing for dynamic data
+                updates without the need for a full page reload.
               </p>
             </div>
           </div>
@@ -44,8 +45,8 @@
               <h3 class="montserratBold u-space-top">Vue<br /></h3>
               <div class="horizLine"></div>
               <p class="u-space-top">
-                Another single page app. I find it a bit more approachable than
-                React. This site was built using Vue.
+                This is another single-page application, which I find more
+                approachable than React. It was developed using Vue.js.
               </p>
             </div>
           </div>
@@ -56,15 +57,15 @@
 </template>
 
 <script>
-import ScrollDown from "@/components/ScrollDown.vue";
-import NumberContainer from "@/components/NumberContainer.vue";
+import ScrollDown from '@/components/ScrollDown.vue';
+import NumberContainer from '@/components/NumberContainer.vue';
 
 export default {
-  name: "home",
+  name: 'home',
   components: {
     ScrollDown,
-    NumberContainer
-  }
+    NumberContainer,
+  },
 };
 </script>
 
@@ -83,21 +84,21 @@ export default {
         height: 230px;
         margin: auto;
         border-radius: 50%;
-        background: url("../assets/ruby.png") center no-repeat,
-          url("../assets/bg-blue-noise.png");
+        background: url('../assets/ruby.png') center no-repeat,
+          url('../assets/bg-blue-noise.png');
         // background-repeat: no-repeat;
       }
       &:nth-of-type(2) {
         .overlayImg {
-          background: url("../assets/react.png") center no-repeat,
-            url("../assets/bg-blue-noise.png");
+          background: url('../assets/react.png') center no-repeat,
+            url('../assets/bg-blue-noise.png');
           background-size: 80%;
         }
       }
       &:nth-of-type(3) {
         .overlayImg {
-          background: url("../assets/vue.png") center no-repeat,
-            url("../assets/bg-blue-noise.png");
+          background: url('../assets/vue.png') center no-repeat,
+            url('../assets/bg-blue-noise.png');
           background-size: 70%;
         }
       }

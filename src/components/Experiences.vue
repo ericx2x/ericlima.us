@@ -20,10 +20,10 @@
               <h3 class="montserratBold u-space-top">STARTUPS<br /></h3>
               <div class="horizLine"></div>
               <p class="u-space-top">
-                I've always had interest in developing a startup company. I have
-                many ideas and passions. In the past I've attempted a few things
-                as part of the Reverse Startups foundation. I'm still quite
-                interested in planning my next big thing.
+                I have always been passionate about developing a startup. With
+                numerous ideas and interests, I have previously explored several
+                concepts as part of the Reverse Startups foundation. I remain
+                enthusiastic about planning my next big venture.
               </p>
             </div>
           </div>
@@ -35,13 +35,14 @@
               alt="Lorem ipsum dolor sit amet"
             />
             <div class="paragraphContent">
-              <h3 class="montserratBold u-space-top">Bitcoin SV<br /></h3>
+              <h3 class="montserratBold u-space-top">Bitcoin<br /></h3>
               <div class="horizLine"></div>
               <p class="u-space-top">
-                I've learning as much as I could about Bitcoin for years. I know
-                quite a bit about it and how it will impact he world in the
-                future. I'm heavily involved with work in it. Lots to learn,
-                lots to experience, lots of fun.
+                I have been immersing myself in Bitcoin for years, gaining a
+                deep understanding of its potential impact on the world. My
+                involvement in this space is extensive, and I find it to be both
+                an exciting journey and an ongoing learning experience. There’s
+                always more to explore and discover.
               </p>
             </div>
           </div>
@@ -54,14 +55,17 @@
             />
             <div class="paragraphContent">
               <h3 class="montserratBold u-space-top">
-                Digital Forensics<br />
+                Artificial Intelligence<br />
               </h3>
               <div class="horizLine"></div>
               <p class="u-space-top">
-                My friends like to joke that I'm Mr. Robot. I hate that show but
-                I do enjoy learning about how to safeguard valuable information.
-                Most valued information is moving into electronic form making
-                this quite a valued skill.
+                I am deeply passionate about artificial intelligence and its
+                transformative potential in various industries. I am committed
+                to developing my expertise in machine learning, natural language
+                processing, and data analysis. Understanding
+                AI not only positions me at the forefront of technological
+                advancements but also empowers me to contribute innovative
+                solutions in a rapidly evolving landscape.
               </p>
             </div>
           </div>
@@ -76,9 +80,11 @@
               <h3 class="montserratBold u-space-top">Investing<br /></h3>
               <div class="horizLine"></div>
               <p class="u-space-top">
-                I know quite a bit about investing. I can't believe they don't
-                teach this in school. Compound interest. "He who understands it,
-                earns it; he who doesn't, pays it." -Einstein
+                I possess significant knowledge about investing, and I'm
+                surprised this essential topic isn't taught in schools.
+                Understanding compound interest is crucial: "He who understands
+                it, earns it; he who doesn’t, pays it." - Einstein. I believe
+                that financial literacy is key to building wealth.
               </p>
             </div>
           </div>
@@ -89,15 +95,15 @@
 </template>
 
 <script>
-import ScrollDown from "@/components/ScrollDown.vue";
-import NumberContainer from "@/components/NumberContainer.vue";
+import ScrollDown from '@/components/ScrollDown.vue';
+import NumberContainer from '@/components/NumberContainer.vue';
 
 export default {
-  name: "home",
+  name: 'home',
   components: {
     ScrollDown,
-    NumberContainer
-  }
+    NumberContainer,
+  },
 };
 </script>
 

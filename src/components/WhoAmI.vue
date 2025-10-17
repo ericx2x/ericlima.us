@@ -6,21 +6,22 @@
     <div class="dashedLine extended"></div>
     <NumberContainer num="1" />
     <h3 class="large u-space-top--xlarge ericTransEffect">
-      I'm <span>Eric Lima</span>.<br />
-      A web developer.
+      I'm <span>Eric Lima</span>, a skilled front-end developer dedicated to
+      crafting powerful and engaging websites that make a difference.
     </h3>
     <Tetris class=" ericTransEffect" />
     <p class="u-space-top--large ericTransEffect">
-      I'm a passionate and dedicated web developer who has developed hundreds of
-      different websites that have a combined total of over a
-      <span>million page views</span>. Websites including maps, statistics,
-      valued information and more. <br />Throughout my years, I've developed
-      things in <span>C, C++, C#, Java, JS, Ruby, Python and more</span>. I'm
-      more focused with JS and web development at the moment though. My love for
-      programming lead me to pursue a
-      <span>Bachelors of Science degree in Computer Science</span> at the
-      University of Massachusetts Lowell. This website showcases some of my best
-      work.
+      I am a passionate and dedicated web developer with extensive experience,
+      having created hundreds of websites that collectively garner over a
+      <span>million page views</span>. My projects range from interactive maps
+      and statistics to valuable information platforms and more.
+      <br />Throughout my career, I have worked with multiple programming
+      languages, including <span>C, C++, C#, Java, JS, Ruby and Python</span>.
+      Currently, my focus is primarily on JavaScript and web development, where
+      I find the most fulfillment. My enthusiasm for programming inspired me to
+      pursue a <span>Bachelors of Science degree in Computer Science</span> at
+      the University of Massachusetts Lowell. This website showcases some of my
+      best work and highlights my skills and dedication to the craft.
     </p>
     <p class="u-space-top--large ericTransEffect">
       Currently, I am working fulltime to build client websites. Here are some
@@ -31,17 +32,17 @@
 </template>
 
 <script>
-import ScrollDown from "@/components/ScrollDown.vue";
-import Tetris from "@/components/Tetris.vue";
-import NumberContainer from "@/components/NumberContainer.vue";
+import ScrollDown from '@/components/ScrollDown.vue';
+import Tetris from '@/components/Tetris.vue';
+import NumberContainer from '@/components/NumberContainer.vue';
 
 export default {
-  name: "home",
+  name: 'home',
   components: {
     ScrollDown,
     Tetris,
-    NumberContainer
-  }
+    NumberContainer,
+  },
 };
 </script>
 

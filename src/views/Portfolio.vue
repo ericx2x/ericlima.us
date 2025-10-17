@@ -13,6 +13,28 @@
             class="item col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-0 u-space-top--large ericTransEffect"
           >
             <img
+              src="../assets/portsubicons/fmglobal.png"
+              alt="Lorem ipsum dolor sit amet"
+            />
+            <p class="u-space-top">
+              FMglobal internal design system and inteneral application for field engineers.
+            </p>
+          </div>
+          <div
+            class="item col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-0 u-space-top--large ericTransEffect"
+          >
+            <img
+              src="../assets/portsubicons/monster.png"
+              alt="Lorem ipsum dolor sit amet"
+            />
+            <p class="u-space-top">
+              Monster.com which recieves hundreds of thousands of page views on the daily.
+            </p>
+          </div>
+          <div
+            class="item col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-0 u-space-top--large ericTransEffect"
+          >
+            <img
               src="../assets/portsubicons/aetna.jpg"
               alt="Lorem ipsum dolor sit amet"
             />
@@ -20,29 +42,6 @@
               Working on a digital style guide for Aetna. Utilizes react to
               build components for many different parties to have a central
               reference.
-            </p>
-          </div>
-          <div
-            class="item col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-0 u-space-top--large ericTransEffect"
-          >
-            <img
-              src="../assets/portsubicons/mrp.png"
-              alt="Lorem ipsum dolor sit amet"
-            />
-            <p class="u-space-top">
-              A site created for MRP Realty in Downtown Manhattan.
-            </p>
-          </div>
-          <div
-            class="item col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-0 u-space-top--large ericTransEffect"
-          >
-            <img
-              src="../assets/portsubicons/longfellow.png"
-              alt="Lorem ipsum dolor sit amet"
-            />
-            <p class="u-space-top">
-              A site for Longfellow. They invest capital for innovation growth
-              in real estate.
             </p>
           </div>
           <div

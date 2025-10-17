@@ -15,7 +15,7 @@
       <div class="introContainer">
         <div class="introContent">
           <h2>Web Developer</h2>
-          <h3>Creating beautiful and delightful experiences.</h3>
+          <h3>Crafting Stunning and Engaging User Experiences.</h3>
           <a :href="this.resume" target="_blank"
             >Click here to view my resume</a
           >
@@ -341,7 +341,7 @@ html {
     margin-left: -250px;
     a {
       font-size: 1.8rem;
-      line-height: 1.8rem;
+      line-height: 2rem;
       margin: 1rem 0 0 0;
       display: block;
       color: $white;
